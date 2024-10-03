@@ -6,9 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="Enter name " id="name">
-        <input type="text" placeholder="Enter age " id="age">
+    <form>
+        <div id="errorname"></div>
+        <input type="text" placeholder="Enter name " id="name" onblur="s('name')">
+        <div id="errorage"></div>
+        <input type="text" placeholder="Enter age " id="age" onblur="s('age')">
+        <div id="erroremail"></div>
+        <input type="email" placeholder="Enter email id " id="email" onblur="s('email')">
+        <div id="errormobile"></div>
+        <input type="tel" placeholder="Enter mobile number " id="mobile" onblur="s('mobile')"><br>
+        <div id="errorpassword"></div>
+        <input type="text" placeholder="Enter your password " id="password" onblur="s('password')"><br>
+        <div id="errorcpassword"></div>
+        <input type="text" placeholder="Enter your confirm password " id="cpassword" onblur="s('cpassword')"><br>
         <button onclick="return data();">submit</button>
     </form>
     <script src="/java.js"></script>
